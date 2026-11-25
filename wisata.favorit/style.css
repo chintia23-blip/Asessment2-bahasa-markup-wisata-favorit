@@ -1,0 +1,294 @@
+/* =================================
+   1. PENGATURAN DASAR WEBSITE
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f5ed;
+    color: #333333;
+    line-height: 1.7;
+}
+
+/* =================================
+   2. HEADER
+================================= */
+
+.header {
+    background-color: #315c45;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 15px;
+    color: #e5eee6;
+}
+
+/* =================================
+   3. NAVIGASI
+================================= */
+
+.navbar {
+    background-color: #234331;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Pseudo-class */
+.navbar a:hover {
+    background-color: #d5a65b;
+    color: #233d2d;
+}
+
+/* Pseudo-class */
+.navbar a:active {
+    background-color: #ffffff;
+}
+
+/* =================================
+   4. CONTAINER / BOX MODEL
+================================= */
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* =================================
+   5. BAGIAN PEMBUKA
+================================= */
+
+.pembuka {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #d5a65b;
+}
+
+/* Pseudo-element */
+.pembuka h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: #d5a65b;
+    margin-top: 8px;
+}
+
+/* =================================
+   6. KARTU WISATA
+================================= */
+
+.wisata {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #e1e1d8;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.wisata h2 {
+    color: #315c45;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+/* CSS combinator: descendant selector */
+.wisata p {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/* CSS combinator: child selector */
+.wisata>img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.wisata h3 {
+    color: #a97932;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* CSS combinator: child selector */
+.wisata>ul {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+/* CSS combinator: adjacent sibling */
+.wisata h3+ul {
+    background-color: #f3f5ef;
+    padding: 15px 15px 15px 35px;
+    border-radius: 7px;
+}
+
+/* CSS combinator: general sibling */
+.wisata h2~img {
+    border: 3px solid #d5a65b;
+}
+
+/* Pseudo-class */
+.wisata li:first-child {
+    font-weight: bold;
+}
+
+/* Pseudo-element */
+.wisata p::first-letter {
+    font-size: 25px;
+    font-weight: bold;
+    color: #315c45;
+}
+
+/* =================================
+   7. BAGIAN PENUTUP
+================================= */
+
+.penutup {
+    background-color: #e3ebdf;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.penutup h2 {
+    color: #315c45;
+    margin-bottom: 10px;
+}
+
+/* =================================
+   8. HALAMAN PROFIL
+================================= */
+
+.profil,
+.buku-tamu {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.profil h2,
+.buku-tamu h2 {
+    color: #315c45;
+    margin-bottom: 15px;
+}
+
+.profil p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* =================================
+   9. FORM BUKU TAMU
+================================= */
+
+.buku-tamu label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.buku-tamu input,
+.buku-tamu textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+/* Pseudo-class */
+.buku-tamu input:focus,
+.buku-tamu textarea:focus {
+    outline: none;
+    border-color: #315c45;
+    box-shadow: 0 0 5px rgba(49, 92, 69, 0.3);
+}
+
+.buku-tamu button {
+    background-color: #315c45;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Pseudo-class */
+.buku-tamu button:hover {
+    background-color: #d5a65b;
+    color: #233d2d;
+}
+
+/* =================================
+   10. FOOTER
+================================= */
+
+.footer {
+    background-color: #234331;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* =================================
+   11. RESPONSIVE WEBSITE
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .wisata>img {
+        height: 200px;
+    }
+
+    .navbar a {
+        padding: 8px 12px;
+        margin: 0 3px;
+    }
+
+}
